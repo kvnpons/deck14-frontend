@@ -1,0 +1,35 @@
+{
+  "name": "deck14-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-brands-svg-icons": "^6.4.2",
+    "@fortawesome/free-regular-svg-icons": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@heroicons/react": "^2.0.18",
+    "@mui/material": "^5.14.7",
+    "formik": "^2.4.3",
+    "next": "^13.4.11",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "yup": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.4.2",
+    "@types/react": "18.2.15",
+    "typescript": "5.1.6"
+  }
+}
