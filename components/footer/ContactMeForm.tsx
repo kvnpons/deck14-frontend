@@ -1,6 +1,6 @@
 import { useFormik } from "formik";
 import * as yup from 'yup';
-import { Button, TextField, FormControl, FormLabel } from '@mui/material';
+import { Button, GlobalStyles, TextField } from '@mui/material';
 const ContactMeForm = () => {
     const validationSchema = yup.object({
         name: yup
@@ -37,6 +37,7 @@ const ContactMeForm = () => {
 
     return (<div className={'form-container'}>
         <form>
+
             <h1>Contact Us</h1>
             <TextField
                 fullWidth
@@ -53,6 +54,7 @@ const ContactMeForm = () => {
                 style={{
                     color: "white"
                 }}
+                margin="normal"
             />
             <TextField
                 fullWidth
@@ -66,6 +68,7 @@ const ContactMeForm = () => {
                 helperText={formik.touched.email && formik.errors.email}
                 size={'small'}
                 className="form-element"
+                margin="normal"
             />
             <TextField
                 fullWidth
@@ -78,9 +81,13 @@ const ContactMeForm = () => {
                 error={formik.touched.mobile && Boolean(formik.errors.mobile)}
                 helperText={formik.touched.mobile && formik.errors.mobile}
                 size={'small'}
-                className="form-element"
+                margin="normal"
+                
             />
-            <Button className={"footer-submit form-element"} variant="contained" fullWidth type="submit">Submit</Button>
+            <Button className={"footer-submit form-element"} variant="contained" fullWidth type="submit" style={{
+                    color: "white",
+                    backgroundColor: "black"
+                }}  >Submit</Button>
         </form>
     </div>)
 }

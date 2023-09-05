@@ -153,7 +153,6 @@ Nav responsive
 }
 
 .banner-container {
-    background-image: url('../public/mobilebar/crew.jpg');
     color: white;
     height: 700px;
     display: flex;
@@ -337,7 +336,7 @@ Nav responsive
 }
 
 .story-tile-bg {
-    background-image: url('../public/gallery/gallery_14.jpg');
+    /* background-image: url('../public/gallery/gallery_14.jpg'); */
     background-size: cover;
 }
 
@@ -346,7 +345,6 @@ Nav responsive
     height: 350px;
     text-align: center;
     color: #ffffff;
-    filter: drop-shadow(.2rem .2rem .7rem black)
 }
 
 video {
@@ -437,7 +435,7 @@ video {
     margin-top: 10px;
 }
 
-.form-element {
+.formElement {
     width: 100%;
     margin: 10px;
 }

@@ -1,5 +1,9 @@
 const Banner = () => {
-    return <div className="banner-container">
+    return <div className="banner-container" style={
+        {
+            backgroundImage: "url('/mobilebar/crew.jpg')"
+        }
+    }>
         <div className="overlay">
         </div>
 
