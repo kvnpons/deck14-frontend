@@ -4,7 +4,11 @@ const OurStory = () => <section className="section-container">
     </div>
     <div className="section-content">
         <div className="story-container">
-            <div className="story-tile story-tile-bg">
+            <div className="story-tile story-tile-bg" style={
+                {
+                    backgroundImage: "url('/gallery/gallery_14.jpg')"
+                }
+            }>
                 <i>
                     <div className="story">
                         <h3>Journey</h3>
