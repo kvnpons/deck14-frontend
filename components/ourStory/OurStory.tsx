@@ -13,30 +13,21 @@ const OurStory = () => <section className="section-container">
                     <div className="story">
                         <h3>Journey</h3>
                         <p>
-                            We started our journey to service
-                            way back the year <b>2013</b>. Just group of
-                            friends who enjoys each other's company
-                            talking about small things and sharing drinks. "
-                            <b>Paul, one of our Co-founders,</b> who has been working"
-                            as a bartender at the time in one of the most
-                            <b> prestigious cruise lines</b> in the <b>United States.</b>
-                            suggested that why not bring their world class service
-                            here in the Philippines.
-                            Right then and there our first mobile bar
-                            called <b>Subomix</b> was established.
+                            Growing up, we spent most of our time
+                            hanging out with friends and drinking.
+                            Our joy was mixing and matching drinks.
+                            From the classic Gin and Pomelo turned into Shembot or
+                            (Kopiko brown, Sunday's melon juice, and Gin bilog).
+                            We realized this could be our passion: mixing drinks.
+
                         </p>
                         <p className="story">
-                            And then the <b>pandemic</b> hit us. It was so
-                            devastating that businesses went bankrupt
-                            and it was just a depressing time.
-                            as the spread easen up. We wanted to
-                            embraise people in our own way.
-                            <b> Kevin </b>, thought we could re-brand
-                            the Subomix into a more warm brand who's service
-                            is customer centric. That way, when the <b>pandemic restrictions </b>
-                            are lifted, we could welcome people with open arms.
-                            That's when we decided to create  <br />
-                            <b>Deck14 Mobile bar</b>.
+                            Paul went overseas to pursue this dream and
+                            was lucky enough to have worked in one
+                            of the most prestigious cruise lines in the United States.
+                            Armed with his experience and knowledge in international
+                            hospitality and mixology. He and his buddy Kevin
+                            started Deck 14 Mobile Bar.
                         </p>
                     </div>
                 </i>

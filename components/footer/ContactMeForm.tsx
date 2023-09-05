@@ -87,7 +87,7 @@ const ContactMeForm = () => {
             <Button className={"footer-submit form-element"} variant="contained" fullWidth type="submit" style={{
                     color: "white",
                     backgroundColor: "black"
-                }}>Submit</Button>
+                }}  >Submit</Button>
         </form>
     </div>)
 }
