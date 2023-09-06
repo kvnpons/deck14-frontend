@@ -57,6 +57,9 @@ Nav responsive
     }
 
     .story-tile {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         width: 100% !important;
     }
 
@@ -68,6 +71,11 @@ Nav responsive
         display: block;
         width: 50px;
         animation: rotation 1s linear;
+    }
+
+    #glowing-logo img {
+        height: 300px !important;
+        width: 300px !important;
     }
 
     /*
@@ -326,7 +334,7 @@ Nav responsive
 }
 
 .story-tile {
-    padding-top: 50px;
+    padding: 50px;
     font-size: 15px;
     min-height: 600px;
     width: calc(100%/2);
@@ -341,8 +349,7 @@ Nav responsive
 }
 
 .story {
-    width: 400px;
-    height: 350px;
+    max-width: 400px;
     text-align: center;
     color: #ffffff;
 }
