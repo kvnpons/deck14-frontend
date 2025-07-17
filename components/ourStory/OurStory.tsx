@@ -11,22 +11,16 @@ const OurStory = () => <section className="section-container">
             }>
                 <i>
                     <div className="story">
-                        <h3>Journey</h3>
-                        Growing up, we spent most of our time
-                        hanging out with friends and drinking.
-                        Our joy was mixing and matching drinks.
-                        From the classic Gin and Pomelo turned into Shembot or
-                        (Kopiko brown, Sunday's melon juice, and Gin bilog).
-                        We realized this could be our passion: mixing drinks.
-                        <br />
-                        <br />
-
-                        Paul went overseas to pursue this dream and
-                        was lucky enough to have worked in one
-                        of the most prestigious cruise lines in the United States.
-                        Armed with his experience and knowledge in international
-                        hospitality and mixology. He and his buddy Kevin
-                        started Deck 14 Mobile Bar.
+                    <h1>Our Journey</h1>
+                    <p>It all started with good friends, late nights, and a lot of experimenting. Back then, our weekends were defined by laughter, loud music, and the thrill of mixing whatever we could get our hands on—Gin and Pomelo turned <em>Shembot</em>, or wild combos like Kopiko Brown, Sunday’s melon juice, and a splash of Gin Bilog. It was chaotic, fun, and oddly delicious.</p>
+                    
+                    <p>What began as playful curiosity slowly stirred into something more—a passion for mixology.</p>
+                    
+                    <p>Chasing that spark, <strong>Paul</strong> packed his bags and flew overseas to pursue the craft seriously. He honed his skills aboard one of the most prestigious cruise lines in the U.S., gaining firsthand experience in world-class hospitality and bartending. Every pour, every mix, every guest served added to the vision that had started years ago.</p>
+                    
+                    <p>Armed with this global experience and a heart full of ambition, Paul returned home. He linked up with his best bud <strong>Kevin</strong>, and together, they turned the dream into a brand.</p>
+                    
+                    <p><strong>Deck 14 Mobile Bar</strong> was born—where every cocktail tells a story, and every sip brings you back to where it all started: friends, fun, and a love for the mix.</p>
                     </div>
                 </i>
             </div>

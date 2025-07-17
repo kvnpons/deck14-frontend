@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faTiktok, faInstagram } from "@fortawesome/free-brands-svg-icons"
-import ContactMeForm from './ContactMeForm'
 
 const Footer = () =>
     <section className="section-container">
@@ -27,14 +26,11 @@ const Footer = () =>
                     </div>
                     <div className="group-links">
                         <b>Follow Us</b>
-                        <span><FontAwesomeIcon icon={faFacebook} size={'lg'} /> </span>
+                        <span><FontAwesomeIcon icon={faFacebook} size={'lg'} /></span>
                         <span><FontAwesomeIcon icon={faTiktok} size={'lg'} /></span>
                         <span><FontAwesomeIcon icon={faInstagram} size={'lg'} /></span>
                     </div>
 
-                </div>
-                <div className="footer-contact-section">
-                    <ContactMeForm />
                 </div>
             </div>
             <div className="footer-bottom bg-black">

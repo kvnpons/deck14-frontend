@@ -1,11 +1,12 @@
+import Link from "next/link"
+
 const WebMenu = () => {
     return <div className="menu-list">
-        <div className="menu-item">Services</div>
-        <div className="menu-item">Our Story</div>
-        <div className="menu-item">Gallery</div>
-        <div className="menu-item">Contact Us</div>
-        <div className="menu-item">Partners</div>
-        <div className="menu-item">Get Quote</div>
+        <Link className="menu-item" href={'/#services'}>Services</Link>
+        <Link className="menu-item" href={'/#story'}>Our Story</Link>
+        <Link className="menu-item" href={'/#gallery'}>Gallery</Link>
+        <Link className="menu-item" href={'/#partners'}>Partners</Link>
+        <Link className="menu-item" href={'/get-quote'}>Get Quote</Link>
     </div>
 }
 

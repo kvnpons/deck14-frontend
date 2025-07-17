@@ -1,4 +1,4 @@
-const Services = () => <section className="section-container">
+const Services = () => <section className="section-container" id='services'>
     <div className="section-title">
         <h1>Packages & Services</h1>
     </div>

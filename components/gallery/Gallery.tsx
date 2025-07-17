@@ -21,7 +21,7 @@ const photos = [
 const Gallery = () => {
 
     return (<section className="section-container">
-        <div className="section-title">
+        <div className="section-title" id='gallery'>
             <h1>Gallery</h1>
         </div>
         <div className="section-content" >
