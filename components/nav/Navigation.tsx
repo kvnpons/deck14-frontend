@@ -1,21 +1,22 @@
 import { useState } from "react";
 import WebMenu from "./WebMenu";
+import MobileMenu from "./MobileMenu";
 
 const Navigation = () => {
   const [isHovered, setIsHovered] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const buttonStyle: React.CSSProperties = {
-    backgroundColor: isHovered ? "#222" : "#000",
+    backgroundColor: "#222",
     borderRadius: "5px",
-    color: isHovered ? "#fff" : "#fff",
+    color: "#fff",
     textDecoration: "none",
-    background: "none",
     border: "none",
     cursor: "pointer",
     transition: "color 0.3s ease",
     fontSize: ".8rem",
     padding: "5px 10px",
-    maxHeight: "40px"
+    maxHeight: "40px",
   };
 
   return (
@@ -25,16 +26,22 @@ const Navigation = () => {
           className="logo-small"
           id="web-logo"
           src="logo/blk-site-logo.png"
+          alt="Web Logo"
         />
         <img
           className="logo-small"
           id="mobile-logo"
           src="logo/anchor-logo.png"
+          alt="Mobile Logo"
+          onClick={() => setMobileMenuOpen(true)}
+          style={{ cursor: "pointer" }}
         />
       </section>
+
       <section className="menu-section">
         <WebMenu />
       </section>
+
       <section className="cart-section">
         <button
           onClick={() => window.open("https://m.me/Deck14MobileBar", "_blank")}
@@ -46,6 +53,9 @@ const Navigation = () => {
           Message Us
         </button>
       </section>
+
+      {/* Mobile Drawer */}
+      <MobileMenu isOpen={mobileMenuOpen} onClose={() => setMobileMenuOpen(false)} />
     </div>
   );
 };

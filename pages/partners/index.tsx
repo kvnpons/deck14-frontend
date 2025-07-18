@@ -27,10 +27,15 @@ const companies = [
     phone: "0915 232 2284",
     image: "partners/SBC.png",
   },
+  {
+    name: "La Ponce Aromatique",
+    phone: "0927 110 9986",
+    image: "partners/LaPonce.png",
+  },
 ];
 
 const partnersContainer: React.CSSProperties = {
-  minHeight: "680px",
+  minHeight: "100vh",
 };
 
 const title: React.CSSProperties = {
@@ -42,8 +47,6 @@ const containerStyle: React.CSSProperties = {
   display: "grid",
   gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
   gap: "20px",
-  padding: "40px",
-  backgroundColor: "#f7f7f7",
 };
 
 const cardStyle: React.CSSProperties = {
