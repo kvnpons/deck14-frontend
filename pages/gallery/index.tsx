@@ -64,10 +64,7 @@ const containerStyle: React.CSSProperties = {
   minHeight: "100vh",
 };
 
-const gridStyle: React.CSSProperties = {
-  columnCount: 3,
-  columnGap: "20px",
-};
+
 
 const cardStyle: React.CSSProperties = {
   background: "#fff",
@@ -126,12 +123,28 @@ const textCardStyle = (font: string): React.CSSProperties => ({
 const GalleryPage = () => {
   const [randomizedData, setRandomizedData] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
+  const [columnCount, setColumnCount] = useState(1);
 
   useEffect(() => {
-    const shuffledEvents = [...events].sort(() => 0.5 - Math.random());
+    const updateColumnCount = () => {
+      setColumnCount(window.innerWidth < 768 ? 1 : 5);
+    };
 
+    updateColumnCount(); // initial call
+    window.addEventListener("resize", updateColumnCount);
+
+    return () => window.removeEventListener("resize", updateColumnCount);
+  }, []);
+
+  const gridStyle: React.CSSProperties = {
+    columnCount,
+    columnGap: "20px",
+  };
+  
+  useEffect(() => {
+    const shuffledEvents = [...events].sort(() => 0.5 - Math.random());
     const data = photos.map((photo, index) => {
-      const showText = index % 5 === 0;
+      const showText = index % 3 === 0;
       const eventText = showText
         ? shuffledEvents[Math.floor(index / 5) % events.length]
         : "";
