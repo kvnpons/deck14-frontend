@@ -7,9 +7,9 @@ const Navigation = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const buttonStyle: React.CSSProperties = {
-    backgroundColor: "#222",
+    backgroundColor: isHovered ? "#222" : "#fff",
     borderRadius: "5px",
-    color: "#fff",
+    color: isHovered ? "#fff" : "#222",
     textDecoration: "none",
     border: "none",
     cursor: "pointer",

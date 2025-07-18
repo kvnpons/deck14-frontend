@@ -30,6 +30,10 @@ body {
     display: flex;
     padding: 15px;
     background-color: #ffffff;
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 50000;
 }
 
 .booking-icon {

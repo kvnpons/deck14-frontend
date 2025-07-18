@@ -1,3 +1,5 @@
+import Link from "next/link";
+import { useRouter } from "next/router";
 import React, { useEffect } from "react";
 
 interface MobileMenuProps {
@@ -53,6 +55,7 @@ const closeButtonStyle: React.CSSProperties = {
 };
 
 const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
+  const router = useRouter();
   // ✅ Disable scroll on open
   useEffect(() => {
     if (isOpen) {
@@ -68,16 +71,84 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
 
   return (
     <>
-      <div style={isOpen ? overlayStyle : hiddenOverlayStyle} onClick={onClose}></div>
+      <div
+        style={isOpen ? overlayStyle : hiddenOverlayStyle}
+        onClick={onClose}
+      ></div>
 
       <div style={isOpen ? drawerStyle : hiddenDrawerStyle}>
-        <button onClick={onClose} style={closeButtonStyle}>&times;</button>
+        <button onClick={onClose} style={closeButtonStyle}>
+          &times;
+        </button>
         <nav style={{ marginTop: "80px", textAlign: "center" }}>
-          <ul style={{ listStyle: "none", padding: 0, fontSize: "1.5rem", lineHeight: "2.5rem" }}>
-            <li><a href="#home" style={{ color: "#fff", textDecoration: "none" }}>Home</a></li>
-            <li><a href="#about" style={{ color: "#fff", textDecoration: "none" }}>About</a></li>
-            <li><a href="#services" style={{ color: "#fff", textDecoration: "none" }}>Services</a></li>
-            <li><a href="#contact" style={{ color: "#fff", textDecoration: "none" }}>Contact</a></li>
+          <ul
+            style={{
+              listStyle: "none",
+              padding: 0,
+              fontSize: "1.5rem",
+              lineHeight: "2.5rem",
+            }}
+          >
+            <li>
+              <a
+                style={{ color: "#fff", textDecoration: "none" }}
+                className="menu-item"
+                onClick={() => {
+                  router.push("/#services");
+                  onClose()
+                }}
+              >
+                Services
+              </a>
+            </li>
+            <li>
+              <a
+                style={{ color: "#fff", textDecoration: "none" }}
+                className="menu-item"
+                onClick={() => {
+                  router.push("/#story")
+                  onClose()
+                }}
+              >
+                Our Story
+              </a>
+            </li>
+            <li>
+              <Link
+                className="menu-item"
+                style={{ color: "#fff", textDecoration: "none" }}
+                href={"/gallery"}
+                onClick={() => {
+                  onClose()
+                }}
+              >
+                Gallery
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="menu-item"
+                style={{ color: "#fff", textDecoration: "none" }}
+                href={"/partners"}
+                onClick={() => {
+                  onClose()
+                }}
+              >
+                Partners
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="menu-item"
+                style={{ color: "#fff", textDecoration: "none" }}
+                href={"/get-quote"}
+                onClick={() => {
+                  onClose()
+                }}
+              >
+                Get Quote
+              </Link>
+            </li>
           </ul>
         </nav>
       </div>

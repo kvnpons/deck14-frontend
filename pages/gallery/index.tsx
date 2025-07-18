@@ -64,16 +64,6 @@ const containerStyle: React.CSSProperties = {
   minHeight: "100vh",
 };
 
-const titleStyle: React.CSSProperties = {
-  fontFamily: "'Playfair Display', serif",
-  fontSize: "2.8rem",
-  textAlign: "center",
-  marginBottom: "40px",
-  color: "#fff",
-  fontWeight: 600,
-  letterSpacing: "1px",
-};
-
 const gridStyle: React.CSSProperties = {
   columnCount: 3,
   columnGap: "20px",
@@ -116,15 +106,6 @@ const imageStyle: React.CSSProperties = {
   display: "block",
 };
 
-const introStyle: React.CSSProperties = {
-  // fontFamily: "'Dancing Script', 'Lucida Handwriting', cursive, serif",
-  fontSize: "1.3rem",
-  color: "#fff",
-  maxWidth: "600px",
-  margin: "20px auto",
-  lineHeight: 1.6,
-  paddingLeft: "20px",
-};
 
 const textCardStyle = (font: string): React.CSSProperties => ({
   background: "#f8f8f8",
@@ -175,7 +156,7 @@ const GalleryPage = () => {
     return (
       <>
         <Navigation />
-        <div style={{ padding: 40, backgroundColor: "#222", minHeight: "100vh" }}>
+        <div style={{ padding: 40, backgroundColor: "#222", minHeight: "100vh",  paddingTop:"80px",}}>
           <h1 style={{ color: "#fff", textAlign: "center" }}>
             Every drink has a story
           </h1>
@@ -196,7 +177,7 @@ const GalleryPage = () => {
   return (
     <>
       <Navigation />
-      <div style={{ padding: 40, backgroundColor: "#222", minHeight: "100vh" }}>
+      <div style={{ padding: 40, backgroundColor: "#222", minHeight: "100vh", paddingTop:"80px" }}>
         <h1 style={{ color: "#fff", textAlign: "center" }}>Every drink has a story</h1>
         <div style={gridStyle}>
           {randomizedData.map((item, index) => (

@@ -21,7 +21,7 @@ const companies = [
     name: "Star Catering Services",
     phone: "0939 286 8178",
     image: "partners/StarCatering.png",
-  },  
+  },
   {
     name: "Sweetworks by Cathy",
     phone: "0915 232 2284",
@@ -35,6 +35,7 @@ const companies = [
 ];
 
 const partnersContainer: React.CSSProperties = {
+  paddingTop:"80px",
   minHeight: "100vh",
 };
 
