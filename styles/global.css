@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;900&display=swap');
 
+h1 {
+    font-size: 30px;
+}
+
 #web-logo {
     height: 50px;
     width: 120px;
@@ -351,17 +355,23 @@ Nav responsive
 }
 
 .story {
-    width: 400px;
-    height: 350px;
+    width: auto;
+    height: 100%;
     text-align: center;
-    color: #ffffff;
+    color: #222;
+    outline-color: #eee;
+    background-color: #eee;
+    opacity: .5;
+    overflow-wrap: break-word;
+    word-wrap: break-word; /* legacy */
+    white-space: normal;
+    padding: 20px;
 }
 
 video {
     object-fit: cover;
     height: 100%;
     width: 100%;
-
     position: absolute;
     top: 0;
     left: 0;
@@ -417,7 +427,7 @@ video {
 }
 
 .footer-service-section {
-    width: 50%;
+    width: 100%;
     display: flex;
 }
 

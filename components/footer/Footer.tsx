@@ -20,21 +20,20 @@ const Footer = () =>
                     <div className="group-links">
                         <b>Partners</b>
                         <span>The Event Tent</span>
-                        <span>KNY Grazing Table</span>
                         <span>DJ Rein</span>
-                        <span>Events by Shyne Aguas</span>
+                        <span>Star Catering</span>
                     </div>
                     <div className="group-links">
                         <b>Follow Us</b>
-                        <span><FontAwesomeIcon icon={faFacebook} size={'lg'} /></span>
-                        <span><FontAwesomeIcon icon={faTiktok} size={'lg'} /></span>
-                        <span><FontAwesomeIcon icon={faInstagram} size={'lg'} /></span>
+                        <span><a href='https://www.facebook.com/Deck14MobileBar' target='_'><FontAwesomeIcon icon={faFacebook} size={'lg'} /></a></span>
+                        <span><a href='https://www.tiktok.com/@deck14mobilebar' target='_'><FontAwesomeIcon icon={faTiktok} size={'lg'} /></a></span>
+                        <span><a href='https://www.instagram.com/deck14mobilebar' target='_'><FontAwesomeIcon icon={faInstagram} size={'lg'} /></a></span>
                     </div>
 
                 </div>
             </div>
             <div className="footer-bottom bg-black">
-                All Rights Reserved Deck14 Mobile Entertainment Inc. Copyright © 2023
+                All Rights Reserved Deck14 Mobile Entertainment Inc. Copyright © 2025
             </div>
         </footer>
     </section>

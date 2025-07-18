@@ -1,21 +1,23 @@
+import { useRouter } from "next/router";
+
 const Banner = () => {
-    return <div className="banner-container" style={
-        {
-            backgroundImage: "url('/mobilebar/crew.jpg')"
-        }
-    }>
-        <div className="overlay">
-        </div>
+  const { basePath } = useRouter();
 
-        <div id="glowing-logo">
-            <img id="logo-big" src="logo/glowing-logo.png" />
-            <div id='welcome-msg'>
+  return (
+    <div
+      className="banner-container"
+      style={{
+        backgroundImage: `url('${basePath}/mobilebar/crew.jpg')`,
+      }}
+    >
+      <div className="overlay"></div>
 
-            </div>
-        </div>
-
-
+      <div id="glowing-logo">
+        <img id="logo-big" src="logo/glowing-logo.png" />
+        <div id="welcome-msg"></div>
+      </div>
     </div>
-}
+  );
+};
 
-export default Banner
+export default Banner;
