@@ -5,7 +5,7 @@ const Navigation = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   const buttonStyle: React.CSSProperties = {
-    backgroundColor: "#222",
+    backgroundColor: isHovered ? "#222" : "#000",
     borderRadius: "5px",
     color: isHovered ? "#fff" : "#fff",
     textDecoration: "none",
