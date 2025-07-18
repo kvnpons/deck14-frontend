@@ -17,6 +17,15 @@ const photos = [
     { src: "gallery/gallery_16.jpg", orientation: "landscape" },
     { src: "gallery/gallery_17.jpg", orientation: "portrait" },
     { src: "gallery/gallery_18.jpg", orientation: "portrait" },
+    { src: "gallery/gallery_19.jpg", orientation: "portrait" },
+    { src: "gallery/gallery_20.jpg", orientation: "portrait" },
+    { src: "gallery/gallery_21.jpg", orientation: "portrait" },
+    { src: "gallery/gallery_22.jpg", orientation: "portrait" },
+    { src: "gallery/gallery_23.jpg", orientation: "portrait" },
+    { src: "gallery/gallery_24.jpg", orientation: "portrait" },
+    { src: "gallery/gallery_25.jpg", orientation: "landscape" },
+    { src: "gallery/gallery_26.jpg", orientation: "portrait" },
+    { src: "gallery/gallery_27.jpg", orientation: "landscape" },
 ];
 const Gallery = () => {
 
